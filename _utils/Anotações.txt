@@ -1,0 +1,31 @@
+Quando vocÊ clona um projeto do github
+
+npm install -> vai instalar todas dependencias do projeto
+
+
+
+Problema com a lib http com falta de classes- rodar comando abaixo
+
+npm install --save @angular/http@latest
+
+
+Problema com camera. (rodar esse comando)
+
+npm install @ionic-native/camera@4.20.0
+
+
+
+Erro ao rodar projeto no android com ionic erro de memoria
+
+
+on the following location files.
+
+project-folder\platforms\android\cordova\lib\builders\GradleBuilder.js
+
+project-folder\platforms\android\cordova\lib\builders\StudioBuilder.js
+
+    // to allow dex in process (alterar essa linha pra essa memoria)
+    args.push('-Dorg.gradle.jvmargs=-Xmx512m');
+
+
+ou variavel ambiente _java_options -Xmx512M
